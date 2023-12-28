@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電影訂票系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <marquee bgcolor="red" scrollamount="20"><h1>Yee式電影院</h1></marquee>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+<div class="container">
+    <h2>電影訂票系統</h2>
+    
+    <form action="process_order.php" method="post">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">電話:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="address">運送地址:</label>
+        <textarea id="address" name="address" required></textarea><br><br>
+        
+        <label for="movie">選擇電影:</label>
+        <select id="movie" name="movie">
+            <option value="水行俠 - 數位版">水行俠 - 數位版</option>
+            <option value="水行俠 - 3D版">水行俠 - 3D版</option>
+            <option value="旺卡 - 數位版">旺卡 - 數位版</option>
+            <option value="旺卡 - 3D版">旺卡 - 3D版</option>
+            <option value="水鬼 - 數位版">水鬼 - 數位版</option>
+            <option value="水鬼 - 3D版">水鬼 - 3D版</option>
+            <option value="飢餓遊戲：鳴鳥與游蛇之歌 - 數位版">飢餓遊戲：鳴鳥與游蛇之歌 - 數位版</option>
+            <option value="飢餓遊戲：鳴鳥與游蛇之歌 - 3D版">飢餓遊戲：鳴鳥與游蛇之歌 - 3D版</option>
+            <option value="屍禁 - 數位版">屍禁 - 數位版</option>
+            <option value="屍禁 - 3D版">屍禁 - 3D版</option>
+            <option value="少年Pi的奇幻漂流 (英國國家劇院現場) - 數位版">少年Pi的奇幻漂流 (英國國家劇院現場) - 數位版</option>
+            <option value="少年Pi的奇幻漂流 (英國國家劇院現場) - 3D版">少年Pi的奇幻漂流 (英國國家劇院現場) - 3D版</option>
+        </select><br><br>
+        
+        <label for="quantity">數量:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        
+        <input type="submit" name="Send" value="確認訂購">
+    </form>
+</div>
+<a href="index.html">返回頁首</a>
+    <footer>
+        <p><marquee bgcolor="yellow" scrollamount="10">&copy; 2023 Yee式電影院. 版權Yee式電影所有. All Rights Reserved</marquee></p>
+    </footer>
+</body>
+</html>
